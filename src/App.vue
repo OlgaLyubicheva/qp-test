@@ -11,13 +11,13 @@
 </template>
 
 <style lang="scss">
-@import "./assets/styles/_vars.scss";
+@use "./assets/styles/_vars.scss";
 #app {
   background: #ffffff;
-  font-family: $font-prime;
+  font-family: vars.$font-prime;
   font-weight: 400;
   font-style: normal;
-  color: $text-light;
+  color: vars.$text-light;
   font-size: 16px;
 }
 </style>

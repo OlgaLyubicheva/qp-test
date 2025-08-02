@@ -55,7 +55,7 @@
 </template>
 
 <style lang="scss">
-@import "../assets/styles/_vars.scss";
+@use "../assets/styles/_vars.scss";
 .qp__footer {
   padding: 32px 120px 70px;
   background: #ffffff;
@@ -91,11 +91,11 @@
     &__logo {}
     &__info {
       & > span {
-        font-family: $font-second;
+        font-family: vars.$font-second;
         font-weight: 500;
         font-size: 18px;
         line-height: 30px;
-        color: $text-dark;
+        color: vars.$text-dark;
       }
       & > p {
         margin-top: 16px;
@@ -106,11 +106,11 @@
     &__links {
       padding-left: 66px;
       .links-item {
-        font-family: $font-second;
+        font-family: vars.$font-second;
         font-weight: 500;
         font-size: 15px;
         line-height: 16px;
-        color: $text-dark;
+        color: vars.$text-dark;
         &:not(:last-child) {
           margin-bottom: 24px;
         }

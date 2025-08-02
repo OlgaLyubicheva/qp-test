@@ -1,5 +1,5 @@
-@import "_vars.scss";
-@import "../../fonts/fonts-styles.css";
+@use "_vars.scss";
+@forward "../../fonts/fonts-styles.css";
 body {
   margin: 0;
   padding: 0;
@@ -70,7 +70,7 @@ button, details > summary {
   padding: 6px 16px;
   border: 1px solid #E0E0E0;
   border-radius: 3px;
-  font-family: $font-prime;
+  font-family: vars.$font-prime;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -78,18 +78,18 @@ button, details > summary {
   color: #828282;
   &:focus {
     border: 1px solid #828282;
-    color: $text-light;
+    color: vars.$text-light;
   }
   &.ok {
     border: 1px solid #0EAC00;
-    color: $text-light;
+    color: vars.$text-light;
   }
   &.error {
     border: 1px solid #EB5757;
-    color: $text-light;
+    color: vars.$text-light;
   }
   &-error {
-    font-family: $font-second;
+    font-family: vars.$font-second;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -108,11 +108,11 @@ button, details > summary {
   border-radius: 20px;
 }
 .gp__test-logo {
-  font-family: $font-second;
+  font-family: vars.$font-second;
   font-size: 15px;
   font-weight: 700;
   line-height: 16px;
-  color: $text-dark;
+  color: vars.$text-dark;
   text-transform: uppercase;
 }
 

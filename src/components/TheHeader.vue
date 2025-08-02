@@ -29,7 +29,7 @@
 </template>
 
 <style lang="scss">
-@import "@/assets/styles/_vars.scss";
+@use "../assets/styles/_vars.scss";
 .qp__header {
   position: sticky;
   top: 0;
@@ -58,7 +58,7 @@
       gap: 32px;
     }
     &__link {
-      font-family: $font-second;
+      font-family: vars.$font-second;
       font-style: normal;
       font-weight: 500;
       font-size: 15px;

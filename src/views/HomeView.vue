@@ -178,7 +178,7 @@
 </template>
 
 <style lang="scss">
-@import "../assets/styles/_vars.scss";
+@use "../assets/styles/_vars.scss";
 .home-v {
   &__top {
     display: flex;
@@ -186,14 +186,14 @@
     min-height: 720px;
     padding: 100px 120px 98px; //100px 120px;
     gap: 120px;
-    background: $bg-light-prime;
+    background: vars.$bg-light-prime;
     .top {
       &__title {
-        font-family: $font-second;
+        font-family: vars.$font-second;
         font-weight: bold; //500;
         font-size: 64px;
         line-height: 72px;
-        color: $text-dark;
+        color: vars.$text-dark;
         margin: 40px 0 30px; //32px;
       }
       &__p {
@@ -220,8 +220,8 @@
     .info-title {
       position: relative;
       max-width: 483px;
-      font-family: $font-second;
-      color: $text-dark;
+      font-family: vars.$font-second;
+      color: vars.$text-dark;
       font-weight: 500;
       font-size: 56px;
       line-height: 66px;
@@ -233,7 +233,7 @@
         bottom: 0;
         width: 60%;
         height: 50%;
-        background: $bg-light-prime;
+        background: vars.$bg-light-prime;
       }
     }
     .first-b {
@@ -277,7 +277,7 @@
             width: 100%;
             height: 25%;
             border-radius: 0 30px 0 0;
-            border: dashed $prime-color;
+            border: dashed vars.$prime-color;
             border-width: 3px 3px 0 0;
           }
         }
@@ -291,7 +291,7 @@
             width: 80%;
             height: 50%;
             border-radius: 30px 0 0 0;
-            border: dashed $prime-color;
+            border: dashed vars.$prime-color;
             border-width: 3px 0 0 3px;
           }
         }
@@ -302,18 +302,18 @@
         }*/
         .card {
           &__index {
-            font-family: $font-second;
+            font-family: vars.$font-second;
             font-weight: 500;
             font-size: 15px;
             line-height: 18px;
-            color: $prime-color;
+            color: vars.$prime-color;
           }
           &__title {
-            font-family: $font-second;
+            font-family: vars.$font-second;
             font-weight: 500;
             font-size: 24px;
             line-height: 29px;
-            color: $text-dark;
+            color: vars.$text-dark;
             margin: 8px 0 24px;
           }
           &__text {
@@ -339,7 +339,7 @@
         width: 48px;
         height: 48px;
         border-radius: 50%;
-        border: 1px solid $prime-color;
+        border: 1px solid vars.$prime-color;
         background: #ffffff no-repeat center center;
 
         &:disabled {
@@ -400,11 +400,11 @@
           justify-content: center;
         }
         .slide__name {
-          font-family: $font-second;
+          font-family: vars.$font-second;
           font-weight: 500;
           font-size: 18px;
           line-height: 30px;
-          color: $text-dark;
+          color: vars.$text-dark;
         }
         .slide__position {
           font-size: 16px;
@@ -412,18 +412,18 @@
         }
         .slide__p {
           margin: 17px 0 31px;
-          font-family: $font-second;
+          font-family: vars.$font-second;
           font-weight: 500;
           font-size: 24px;
           line-height: 29px;
-          color: $text-dark;
+          color: vars.$text-dark;
         }
         .slide__pages {
-          font-family: $font-second;
+          font-family: vars.$font-second;
           font-weight: 500;
           font-size: 15px;
           line-height: 18px;
-          color: $prime-color;
+          color: vars.$prime-color;
           margin-top: auto;
         }
       }
@@ -444,11 +444,11 @@
         }
         &__header {
           position: relative;
-          font-family: $font-second;
+          font-family: vars.$font-second;
           font-weight: 500;
           font-size: 24px;
           line-height: 29px;
-          color: $text-dark;
+          color: vars.$text-dark;
 
           &::marker {
             content: "";
@@ -480,15 +480,15 @@
     gap: 120px;
     min-height: 739px;
     padding: 120px;
-    background: $bg-light-prime;
+    background: vars.$bg-light-prime;
     .contacts {
       &__info {
         & > h2 {
-          font-family: $font-second;
+          font-family: vars.$font-second;
           font-weight: 500;
           font-size: 56px;
           line-height: 66px;
-          color: $text-dark;
+          color: vars.$text-dark;
         }
         & > p {
           margin: 32px 0 48px;
@@ -508,11 +508,11 @@
           margin-bottom: 16px;
         }
         & > span {
-          font-family: $font-second;
+          font-family: vars.$font-second;
           font-weight: 500;
           font-size: 15px;
           line-height: 16px;
-          color: $text-dark;
+          color: vars.$text-dark;
         }
       }
       &__form-wrapp {
@@ -703,9 +703,6 @@
         }
         &__card {
           padding: 24px;
-          .card {
-
-          }
         }
       }
       .second-b {
