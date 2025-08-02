@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src:
+    local("Museo Sans Cyrl"),
+    url("Museo-Sans-Cyrl_500.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src:
+    local("Montserrat"),
+    url("Montserrat-VariableFont_wght_400.ttf");
+  font-weight: 400;
+}

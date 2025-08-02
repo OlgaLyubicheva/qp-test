@@ -1,0 +1,119 @@
+@import "_vars.scss";
+@import "../../fonts/fonts-styles.css";
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+button, input, select, textarea {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+button, details > summary {
+  cursor: pointer;
+}
+
+
+.qp__btn {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  //width: 257px;
+  //height: 40px;
+  padding: 4px;
+  border-radius: 60px;
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  &.sm {
+    height: 40px;
+    font-size: 14px;
+  }
+  &.md {
+    height: 54px;
+    font-size: 16px;
+  }
+
+  &.prime {
+    border: none;
+    background: #4F62F6;
+    color: #FFFFFF;
+    &:hover {
+      background: #7181FC;
+    }
+    &.disabled, &:disabled {
+      pointer-events: none;
+      background: #E0E0E0;
+      color: #828282;
+    }
+    &[aria-pressed="true"], &:active {
+      background: #354BF4;
+    }
+  }
+}
+.qp__input {
+  width: 425px;
+  height: 40px;
+  padding: 6px 16px;
+  border: 1px solid #E0E0E0;
+  border-radius: 3px;
+  font-family: $font-prime;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #828282;
+  &:focus {
+    border: 1px solid #828282;
+    color: $text-light;
+  }
+  &.ok {
+    border: 1px solid #0EAC00;
+    color: $text-light;
+  }
+  &.error {
+    border: 1px solid #EB5757;
+    color: $text-light;
+  }
+  &-error {
+    font-family: $font-second;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    color: #EB5757;
+  }
+}
+.qp__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  //align-items: center;
+  padding: 32px;
+  background: #FFFFFF;
+  border: 2px solid #6248FF;
+  border-radius: 20px;
+}
+.gp__test-logo {
+  font-family: $font-second;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 16px;
+  color: $text-dark;
+  text-transform: uppercase;
+}
+
+
